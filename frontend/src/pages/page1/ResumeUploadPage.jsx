@@ -10,7 +10,9 @@ const ResumeUploadPage = () => {
         !w-full
         !max-w-none
         !p-0
-        overflow-hidden
+       overflow-hidden
+        relative
+        flex
         bg-[#f4f1e9]
       "
     >
@@ -68,18 +70,18 @@ const ResumeUploadPage = () => {
               flex
               items-center
               gap-3
-              text-[22px]
-              font-bold
+              text-[30px]
+              font-extrabold
               tracking-[-0.6px]
               text-[#10211f]
             "
           >
-            <span className="flex h-7 items-center gap-[3px]">
-              <span className="h-[8px] w-[3px] rounded-full bg-[#168b78]" />
-              <span className="h-[15px] w-[3px] rounded-full bg-[#168b78]" />
-              <span className="h-[24px] w-[3px] rounded-full bg-[#168b78]" />
-              <span className="h-[17px] w-[3px] rounded-full bg-[#168b78]" />
-              <span className="h-[9px] w-[3px] rounded-full bg-[#168b78]" />
+            <span className="flex h-9 items-center gap-[3px]">
+              <span className="h-[10px] w-[4px] rounded-full bg-[#168b78] font-bold" />
+              <span className="h-[17px] w-[4px] rounded-full bg-[#168b78] font-bold" />
+              <span className="h-[26px] w-[4px] rounded-full bg-[#168b78] font-bold" />
+              <span className="h-[19px] w-[4px] rounded-full bg-[#168b78] font-bold" />
+              <span className="h-[11px] w-[4px] rounded-full bg-[#168b78] font-bold" />
             </span>
 
             SpeechPact
@@ -89,34 +91,52 @@ const ResumeUploadPage = () => {
 
           <div className="relative">
             <p
-              className="
-                text-[17px]
-                font-medium
-                tracking-[-0.3px]
-                text-[#07152f]
-              "
-            >
-              Just Speak. Get Better.
-            </p>
+    className="
+      font-['Comic_Sans_MS']
+      text-[20px]
+      font-semibold
+      leading-none
+      tracking-[0.2px]
+      text-[#07152f]
+      rotate-[-3deg]
+    "
+  >
+    Just Speak. Get Better.
+  </p>
 
-            <svg
-              className="
-                absolute
-                -bottom-[13px]
-                right-0
-                h-[13px]
-                w-[80px]
-              "
-              viewBox="0 0 80 13"
-              fill="none"
-            >
-              <path
-                d="M2 10C21 5 45 7 77 2"
-                stroke="#F4B329"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-            </svg>
+  {/* Hand-drawn yellow underline */}
+  <svg
+    className="
+      pointer-events-none
+      absolute
+      -bottom-[14px]
+      left-[72px]
+      h-[18px]
+      w-[125px]
+      rotate-[-4deg]
+    "
+    viewBox="0 0 125 18"
+    fill="none"
+  >
+    {/* Main underline */}
+    <path
+      d="M3 9C30 5 72 6 122 2"
+      stroke="#F4B329"
+      strokeWidth="3"
+      strokeLinecap="round"
+    />
+
+    {/* Small second hand-drawn stroke */}
+    <path
+      d="M12 15C42 11 72 12 103 8"
+      stroke="#F4B329"
+      strokeWidth="2"
+      strokeLinecap="round"
+      opacity="0.9"
+    />
+  </svg>
+
+           
           </div>
         </header>
 

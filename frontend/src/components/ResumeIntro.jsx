@@ -88,9 +88,9 @@ const ResumeIntro = () => {
             mt-7
             max-w-[500px]
             text-[17px]
-            font-normal
+            font-bold
             leading-[1.55]
-            text-[#68736F]
+            text-[#676d6b]
           "
         >
           Upload your resume and get personalized
@@ -110,8 +110,8 @@ const ResumeIntro = () => {
                 <div
                   className={`
                     flex
-                    h-12
-                    w-12
+                    h-15
+                    w-15
                     items-center
                     justify-center
                     rounded-[15px]
@@ -128,7 +128,7 @@ const ResumeIntro = () => {
                 <span
                   className="
                     text-[13px]
-                    font-semibold
+                    font-bold
                     leading-[1.45]
                     text-[#17211F]
                   "
@@ -142,22 +142,25 @@ const ResumeIntro = () => {
 
         {/* Small decorative note */}
         <div
-          className="
-            absolute
-            -bottom-[145px]
-            -left-5
-            flex
-            rotate-[-3deg]
-            items-end
-            gap-3
-            text-[#176B5B]
-          "
-        >
+         
+  className="
+    absolute
+    bottom-[-95px]
+    left-0
+    z-30
+    flex
+    rotate-[-3deg]
+    items-end
+    gap-3
+    text-[#176B5B]
+  "
+>
+        
           <span
             className="
               font-['Comic_Sans_MS']
               text-[17px]
-              font-semibold
+              font-bold
               leading-[1.15]
               tracking-[0.3px]
             "
@@ -182,3 +185,6 @@ const ResumeIntro = () => {
 };
 
 export default ResumeIntro;
+
+
+ 
