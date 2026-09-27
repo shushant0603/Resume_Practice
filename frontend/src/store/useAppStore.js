@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-const INITIAL_SECONDS = 120;
+const INITIAL_SECONDS = 30;
 
 const useAppStore = create((set) => ({
   file: null,
