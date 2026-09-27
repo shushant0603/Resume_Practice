@@ -56,8 +56,7 @@ const ResumeUploadPage = () => {
             w-full
             items-center
             justify-between
-            px-[6vw]
-            py-7
+            px-5 py-5 sm:px-[6vw] sm:py-7
           "
         >
           {/* LOGO */}
@@ -68,7 +67,7 @@ const ResumeUploadPage = () => {
               flex
               items-center
               gap-3
-              text-[25px]
+              text-[20px] sm:text-[25px]
               font-extrabold
               tracking-[-0.6px]
               text-[#10211f]
@@ -87,7 +86,7 @@ const ResumeUploadPage = () => {
 
          {/* TAGLINE */}
 
-<div className="relative">
+<div className="relative hidden sm:block">
   <p
     className="
       text-[18px]
@@ -128,10 +127,8 @@ const ResumeUploadPage = () => {
             grid
             !w-full
             !max-w-none
-            grid-cols-[60%_40%]
+            grid-cols-1 gap-8 px-5 pt-4 sm:px-[6vw] sm:pt-[3vh] lg:grid-cols-[minmax(0,60%)_minmax(0,40%)] lg:gap-0
             items-center
-            px-[6vw]
-            pt-[3vh]
           "
         >
           {/* LEFT */}
@@ -148,7 +145,7 @@ const ResumeUploadPage = () => {
               z-20
               flex
               w-full
-              justify-end
+              justify-start lg:justify-end
             "
           >
             <ResumeUploadCard />

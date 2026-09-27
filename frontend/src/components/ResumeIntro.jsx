@@ -43,13 +43,13 @@ const benefits = [
 
 const ResumeIntro = () => {
   return (
-    <section className="relative flex h-full w-full items-center">
+    <section className="relative flex h-full w-full items-center py-4 sm:py-8 lg:py-0">
       <div className="relative w-full max-w-[610px] pl-1">
 
         {/* Heading */}
         <h1
           className="
-            text-[clamp(50px,4.2vw,68px)]
+            text-[clamp(2.5rem,7vw,4.25rem)]
             font-extrabold
             leading-[0.98]
             tracking-[-2.5px]
@@ -57,9 +57,9 @@ const ResumeIntro = () => {
           "
         >
           Turn Your
-          <br />
+          <br className="hidden sm:block" />
           Resume into
-          <br />
+          <br className="hidden sm:block" />
 
           <span className="relative inline-block text-[#176B5B]">
             Real Conversations.
@@ -87,24 +87,24 @@ const ResumeIntro = () => {
           className="
             mt-7
             max-w-[500px]
-            text-[17px]
+            text-[15px] sm:text-[17px]
             font-bold
             leading-[1.55]
             text-[#68736F]
           "
         >
           Upload your resume and get personalized
-          <br />
+          <br className="hidden sm:block" />
           speaking topics to practice, with AI.
         </p>
 
         {/* Benefits */}
-        <div className="mt-8 flex items-start gap-10">
+        <div className="mt-8 flex flex-wrap items-start gap-x-6 gap-y-6 sm:gap-x-10">
           {benefits.map(
             ({ icon: Icon, label, iconClass }) => (
               <div
                 key={iconClass}
-                className="flex min-w-[130px] flex-col items-start gap-2.5"
+                className="flex min-w-[120px] flex-1 flex-col items-start gap-2.5 sm:flex-none"
               >
                 {/* Icon */}
                 <div

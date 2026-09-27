@@ -67,17 +67,17 @@ const TopicPickerPage = () => {
           <span className="wordmark-mark font-bold" aria-hidden="true"><i /><i /><i /></span>
           SpeechPact
         </a>
-        <button className="new-resume-button  !text-[20px] !font-bold" onClick={startNewResume}><Plus size={20} /> New Resume</button>
+        <button className="new-resume-button !text-[14px] sm:!text-[20px] !font-bold" onClick={startNewResume}><Plus size={18} /> <span className="hidden sm:inline">New Resume</span></button>
       </header>
 
-      <section className="topic-picker-content  !flex !flex-col !items-center !text-center !w-full">
+      <section className="topic-picker-content !mt-10 sm:!mt-14 !flex !flex-col !items-center !text-center !w-full">
         
        <h1 className="mx-auto w-full text-center text-[32px] font-extrabold leading-tight tracking-[-1px] text-[#07152f]">Pick a Topic</h1>
         <p className="topic-subtitle font-bold">Choose a topic or let us pick one for you.</p>
 
-        <div className="topic-carousel">
+        <div className="topic-carousel w-full max-w-5xl">
           <button className="carousel-arrow" onClick={() => move(-1)} disabled={topics.length <= VISIBLE_TOPIC_COUNT} aria-label="Previous topics"><ArrowLeft size={20} /></button>
-          <div className="topic-card-list">
+          <div className="topic-card-list min-w-0">
             {visibleTopics.map((topic, index) => {
               const isSelected = selectedTopic?.title === topic.title;
               return (

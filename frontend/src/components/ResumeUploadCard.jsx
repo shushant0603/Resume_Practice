@@ -66,14 +66,14 @@ const ResumeUploadCard = () => {
   return (
     <section
       className={`upload-card  
-         w-[45vw]
-    min-h-[700vh]
+            w-full
+          min-h-[390px]
     max-w-[600px]
     rounded-[30px] 
      border
     border-[#dce9e5]
     bg-white
-    p-10
+    p-6 sm:p-10
     shadow-[0_15px_40px_rgba(22,139,120,0.08)]
     flex
     items-center
@@ -109,9 +109,10 @@ const ResumeUploadCard = () => {
       font-bold
       text-white
     ">↑</span></div>
-          <h2 className="text=[50px] font-extrabold  leading-tight tracking-[-0.8px] text-[#07152f]">Upload Your Resume</h2>
+          <h2 className="text-[clamp(1.35rem,4vw,2rem)] font-extrabold leading-tight tracking-[-0.8px] text-[#07152f]">Upload Your Resume</h2>
           <p className="file-types !text-[13px] font-bold ">PDF or DOCX <span>·</span> Max 5 MB</p>
-          <button className="primary-button !w-full
+              <button className="primary-button !w-full
+            max-w-[320px]
     rounded-xl
     !text-xl
     !font-semibold

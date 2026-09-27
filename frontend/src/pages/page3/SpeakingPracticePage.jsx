@@ -92,14 +92,14 @@ const SpeakingPracticePage = () => {
         <div className="practice-progress"><strong>{topicNumber} / {topics.length}</strong><span><i /><i /><i /><i /><i /><i /></span></div>
       </div>
 
-      <section className="practice-content">
+      <section className="practice-content w-full px-0 sm:px-4">
         <div className="practice-category"><FileText size={19} /> {selectedTopic.category || "Project"}</div>
         <div className="practice-prompt">
           <div className="prompt-meta"><span>INTERVIEW QUESTION</span><span><Sparkles size={14} /> Based on your resume</span></div>
           <div className="prompt-copy"><span className="prompt-icon"><FileText size={21} /></span>{selectedTopic.description || selectedTopic.title}</div>
         </div>
 
-        <div className="duration-row">
+        <div className="duration-row flex-wrap px-2 sm:px-0">
           <span className="duration-label"><span className="duration-clock" aria-hidden="true">◷</span>Speaking Time</span>
           <div className="duration-quick-options">
             {[30, 60, 120, 180].map((value) => (
